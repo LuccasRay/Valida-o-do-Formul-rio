@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+	<meta charset="utf-8">
+	<title> Formulários em Java Script </title>
+	<style type="text/css">
+
+        	.esconder{
+        		display: none; 
+        	}
+        	body{
+        	    background-color: #E0FFFF;  
+        	}
+          hr{
+            display: none;
+          }
+          .show{
+            display: block;
+          }
+        	
+        	
+  </style> 
+</head>
+<body>
+
+  <p>
+  <p>
+	 <!-- onsubmit="pergarDados()" (antes estava na tag form) -->
+  <form>
+  
+  <legend><font size="5"><center> Preencha este Formulário </center></font></legend>
+  
+  <p>
+  <p>
+  <fieldset>
+  
+		<p>Nome Completo: <input type="text" id="texto"></p>
+		<p>Senha: <input type="password" id="senha"></p>
+		<p>Telefone: <input type="tel" id="fone"></p>
+		<p>Digite seu E-mail: <input type="email" id="e-mail"></p>
+		
+  </fieldset>
+		<p>
+  <fieldset>
+  
+		<div> Cursos Básicos:
+		<p>
+			 <label for="pw"> Programação Web </label>
+			 <input type="checkbox" id="pw"><br>
+			 <label for="poo" > Programação Orientada a Objetos </label>
+			 <input type="checkbox" id="poo"> <br>
+			 <label for="nr"> Noções de Robótica </label>
+			 <input type="checkbox" id="nr"> <br>
+			 		 
+        </div>
+   </fieldset>
+    
+        <br>
+        
+    <fieldset>
+    
+        <legend> Cursos Avançados: </legend>
+        <label for="info2"> Informática </label>
+        <input type="radio" name="seucurso" id="info2"> <br>
+		<label for="adm2"> Administração </label>
+		<input type="radio" name="seucurso" id="adm2"> <br>
+        <label for="enf2"> Enfermagem </label>
+        <input type="radio" name="seucurso" id="enf2"> <br>
+
+    </fieldset>
+    
+    <p>
+    <p>
+    <fieldset>
+    
+         <legend> Número preferido: </legend>
+         <input type="number" name="num" id="num">
+
+    </fieldset>
+    
+    <p>
+    <p>
+    <fieldset>
+
+        	<legend> Data: </legend>
+        	<input type="date" name="data" id="data">
+
+    </fieldset>
+    
+    <p>
+    <p>
+    <fieldset>
+
+        	<legend> Hora: </legend>
+        	<input type="time" name="hora" id="hora">
+
+    </fieldset>
+    
+    <p>
+    <p>
+    <fieldset>
+      
+            <legend>Cor preferida:</legend>
+        	<label for="priFaixa">Selecione a cor:</label> 
+        	<select name="priFaixa" id="priFaixa">
+        	  <option value="Preto">Preto</option>
+        	  <option value="Marron">Marron</option>
+        	  <option value="Vermelho">Vermelho</option>
+        	  <option value="Laranja">Laranja</option>
+            </select>
+    </fieldset>
+    
+    <p>
+    <p>
+    <fieldset>
+
+        	<legend> Avalie o formulário: </legend>
+        	<p>
+        	<input type="range" id="range" min="10" max="100">
+
+    </fieldset>
+    
+    <p><button type="reset"> Limpar </button></p>
+    <p><button type="button" onclick="pegarDados()"> Submeter Form </button></p>
+     
+  </form>
+
+  <hr>
+  <div class="show"></div>
+  <div class="esconder"> INFORMAÇÕES PESSOAIS </div> 
+  <p>
+  <div id="campotexto"> </div>
+  <div id="camposenha"> </div>
+  <div id="campofone"> </div>
+  <div id="campoemail"> </div>
+  <div id="campoinfo"> </div>
+  <div id="campoadm"> </div>
+  <div id="campoenf"> </div>
+  <div id="camporadio"> </div>
+  <div id="camporadio1"> </div>
+  <div id="camporadio2"> </div>
+  <div id="camponum"> </div>
+  <div id="campodata"> </div>
+  <div id="campohora"> </div>
+  <div id="campofaixa"> </div>
+  <div id="camporange"> </div>
+
+
+
+ <!--<script type="text/javascript"> (para incorporar js no html)
+
+		function pergarDados(){
+
+			alert('ok');
+
+		}
+
+	</script>-->
+
+
+	<script src="script.js"></script>
+
+</body>
+</html>
